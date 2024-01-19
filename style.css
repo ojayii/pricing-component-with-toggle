@@ -1,0 +1,173 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(0, 0%, 0%);
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    font-size: 100%;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+    z-index: 1;
+    padding-block: 2rem;
+    background-color: hsl(234, 14%, 74%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    color: hsl(232, 13%, 33%);
+}
+
+header label {
+    font-size: ;
+    color: hsl(233, 13%, 49%);
+}
+
+main {
+    /* text-align: center; */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-container__card {
+    background-color: hsl(240, 78%, 98%);
+    padding: 2rem;
+    text-align: center;
+    width: 26%;
+    height: 30rem;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+}
+
+.card-container__card .title {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-container__card .price {
+    color: hsl(232, 13%, 33%);
+    font-size: 3.4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.card-container__card p {
+    color: hsl(232, 13%, 33%);
+}
+
+.card-container__card a {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: hsl(240, 78%, 98%);
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 0.5rem;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.2rem;
+}
+
+.card-container__card hr {
+    margin-block: 1.6rem;
+    border: none;
+    border-top: 1px solid hsl(232, 13%, 33%);
+}
+
+.card-container__card:nth-child(1) {
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+}
+
+.card-container__card:nth-child(2) {
+    transform: scaleY(1.1);
+    border-radius: 0.7rem;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.card-container__card:nth-child(2) p {
+    color: hsl(240, 78%, 98%);
+    transform: scaleY(1);
+}
+
+.card-container__card:nth-child(2) a {
+    background: hsl(240, 78%, 98%);
+    color: hsl(237, 63%, 64%);
+    transform: scaleY(1);
+}
+
+.card-container__card:nth-child(2) hr {
+    border-color: hsl(240, 78%, 98%);
+    transform: scaleY(1);
+}
+
+.card-container__card:nth-child(3) {
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+}
+
+
+.bg-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.bg-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media (max-width: 48rem) {
+    .bg-top {
+        display: none;
+    }
+    
+    .bg-bottom {
+        display: none;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+    
+    .card-container__card {
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 3.4rem;
+        border-radius: 0.6rem;
+        transform: scaleY(1);
+    }
+}
