@@ -1,5 +1,5 @@
 let toggle = document.querySelector(".toggle-can input");
-let prices = document.querySelectorAll(".card-container__card .price");
+let prices = document.querySelectorAll(".card-container__card .price .txt");
 // console.log(prices);
 
 toggle.addEventListener("click", () => {
