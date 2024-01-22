@@ -143,9 +143,19 @@ main {
 
 .card-container__card .price {
     color: hsl(232, 13%, 33%);
-    font-size: 3.4rem;
     font-weight: 800;
     margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container__card .price .dollar {
+    font-size: 2rem;
+}
+
+.card-container__card .price .txt {
+    font-size: 3.4rem;
 }
 
 .card-container__card p {
