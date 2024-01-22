@@ -16,12 +16,12 @@ html {
     margin: 0;
     max-width: 100%;
     font-size: 100%;
-    min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
 
 body {
     position: relative;
+    min-height: 100vh;
     z-index: 1;
     padding-block: max(4rem);
     background-color: hsl(240, 78%, 98%);
